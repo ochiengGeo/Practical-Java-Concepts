@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.net.UnknownHostException;
 
 
-public class SampleInetAddress {
+public class HostNameResolver {
     public static void main (String[] args) {
         System.out.println();
         Scanner cin = new Scanner(System.in);
