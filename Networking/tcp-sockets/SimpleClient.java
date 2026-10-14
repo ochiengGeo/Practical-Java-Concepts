@@ -1,25 +1,34 @@
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 
 public class SimpleClient {
     public static void main(String[] args) {
-        try (Socket socket = new Socket("127.0.0.1", 5000)) {
-            System.out.println("Connected to the server!");
-            System.out.println(
-                "Server address: " + socket.getInetAddress()
-            );
-            System.out.println(
-                "Local client port: " + socket.getLocalPort()
-            );
-            System.out.println(
-                "Remote server port: " + socket.getPort()
-            );
+        try (Socket socket = new Socket("127.0.0.1", 5000);
+             BufferedReader keyboard = new BufferedReader(
+                 new InputStreamReader(System.in)
+             );
+             BufferedReader reader = new BufferedReader( //instantiates to the object that is responsible for reading the tcp reciever buffer
+                 new InputStreamReader(socket.getInputStream())
+             );
+             PrintWriter writer = new PrintWriter( //instantiates to the object that is responsible for converting unicode to byte code
+                 socket.getOutputStream(), true
+             )) {
+
+            System.out.print("Enter a message: ");
+            String message = keyboard.readLine(); //reads message written by the keyboard
+
+            writer.println(message); //converts the message to bytes
+
+            String response = reader.readLine(); //waits for response, and 'blocks'  so long as there's no response. actually it waits for something on the buffer
+
+            System.out.println("Server replied: " + response);
 
         } catch (IOException e) {
-            System.out.println(
-                "Connection failed: " + e.getMessage()
-            );
+            System.out.println("Networking error: " + e.getMessage());
         }
     }
 }
