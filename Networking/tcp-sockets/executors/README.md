@@ -1,63 +1,44 @@
-Console Chat Application
+# 💬 Console Chat Application
 
-A lightweight, concurrent multi-client TCP chat application written in Java. The application features a simple command-line interface, ANSI color-coded console output, and leverages Java Virtual Threads (Executors.newVirtualThreadPerTaskExecutor()) to handle multiple incoming client connections concurrently.
+An ultra-lightweight, high-performance, multi-client TCP terminal chat system built in Java 21+. It features real-time client identity switching, ANSI-formatted colored console logging, and virtual thread concurrency.
 
-Features
+---
 
-Virtual Threads Execution: Uses Project Loom's lightweight virtual threads to handle concurrent client connections efficiently.
+## 🌟 Visual Preview
 
-Custom Identity/Username: Clients specify a username upon connection, which prefixes all their messages on the server log.
+![Terminal Output Preview](assets/terminal-preview.jpg)
 
-Colored Terminal Output: Includes ANSI escape codes for formatted console status messages and distinct chat coloring.
+> **Note on Image Path:** If your `assets/` folder is stored in the root of your repo instead of inside `executors/`, change the image line above to:
+> `![Terminal Output Preview](/assets/terminal-preview.png)`
 
-Single Entry Point: Unified executable flow via Main.java allowing execution as either server or client.
+---
 
-Requirements
+## ⚡ Core Features
 
-Java Development Kit (JDK): JDK 21 or higher (required for virtual threads support).
+* ⚡ **Virtual Thread Architecture** — Powered by Java's Project Loom (`Executors.newVirtualThreadPerTaskExecutor()`), enabling lightweight client connection scaling without thread pool limits.
+* 🎨 **ANSI Terminal Formatting** — Rich, color-coded logging for incoming connections, IP address resolution, and dynamic identity management.
+* 🆔 **Dynamic Identity Tracking** — Clients set custom usernames upon connecting, which are attached to server logs.
+* 🔄 **Dual-Mode Executable** — Unified launch system that prompts the user to run as a server or a client from a single binary.
 
-Project Structure
+---
 
-.
-├── Main.java          # Entry point (handles mode selection)
-├── ServerFile.java    # Server logic & client handling using Virtual Threads
-├── ClientFile.java    # Client logic & socket output stream handler
-└── ConsoleColors.java # ANSI color constants and formatting helper
+## ⚙️ Tech Stack & Requirements
 
+| Component | Specification |
+| :--- | :--- |
+| **Language** | Java 21 or higher |
+| **Concurrency** | Project Loom (Virtual Threads) |
+| **Networking** | Standard Java TCP Sockets (`ServerSocket`, `Socket`) |
+| **Dependencies** | None (Zero external dependencies) |
 
-Getting Started
+---
 
-1. Compilation
+## 📂 Project Structure
 
-Compile all Java source files from the project directory:
-
-javac *.java
-
-
-2. Running the Server
-
-Start the application and enter y when prompted to launch the server mode.
-
-java Main
-
-
-Is this a Server? (y/n) : y
-Server is listening on port 5000...
-
-
-The server listens on TCP port 5000 by default.
-
-3. Running a Client
-
-Open another terminal window (or run on another device on the same network) and start the application, entering n when prompted:
-
-java Main
-
-
-Is this a Server? (y/n) : n
-Connected to localhost[✓].
-Enter your username: Alice
-[Alice]: Hello, server!
-
-
-To disconnect the client, submit an empty line (press Enter without typing a message).
+```text
+├── assets/
+│   └── terminal-preview.png   # Console preview image for GitHub
+├── Main.java                  # Interactive binary entry point
+├── ServerFile.java            # Multi-threaded TCP server handler
+├── ClientFile.java            # Interactive TCP client connection loop
+└── ConsoleColors.java         # Native ANSI color codes & formatting helpers
