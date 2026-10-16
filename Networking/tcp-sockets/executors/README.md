@@ -8,8 +8,7 @@ An ultra-lightweight, high-performance, multi-client TCP terminal chat system bu
 
 ![Terminal Output Preview](assets/terminal-preview.jpg)
 
-> **Note on Image Path:** If your `assets/` folder is stored in the root of your repo instead of inside `executors/`, change the image line above to:
-> `![Terminal Output Preview](/assets/terminal-preview.png)`
+
 
 ---
 
