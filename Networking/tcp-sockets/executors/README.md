@@ -36,7 +36,7 @@ An ultra-lightweight, high-performance, multi-client TCP terminal chat system bu
 
 ```text
 ├── assets/
-│   └── terminal-preview.png   # Console preview image for GitHub
+│   └── terminal-preview.jpg   # Console preview image for GitHub
 ├── Main.java                  # Interactive binary entry point
 ├── ServerFile.java            # Multi-threaded TCP server handler
 ├── ClientFile.java            # Interactive TCP client connection loop
