@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class MyServer {
+public class SimpleClient {
     public static void connect (String host, int port) {
         try (var socket = new Socket(host, port)) {
             System.out.println("Connected to localhost...");
