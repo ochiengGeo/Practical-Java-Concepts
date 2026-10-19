@@ -7,14 +7,14 @@ A modular, hands-on repository exploring core Java concepts—from network progr
 ## Quick Navigation
 
 <p align="center">
-  <a href="./networking/"><img src="https://img.shields.io/badge/Networking-0A66C2?style=for-the-badge&logo=java&logoColor=white" alt="Networking" /></a>
-  <a href="./networking/inet-address/"><img src="https://img.shields.io/badge/InetAddress-2563EB?style=for-the-badge" alt="InetAddress" /></a>
-  <a href="./networking/tcp-sockets/"><img src="https://img.shields.io/badge/TCP_Sockets-0D9488?style=for-the-badge" alt="TCP Sockets" /></a>
-  <a href="./networking/udp-datagrams/"><img src="https://img.shields.io/badge/UDP_Datagrams-7C3AED?style=for-the-badge" alt="UDP Datagrams" /></a>
-  <a href="./networking/http-client/"><img src="https://img.shields.io/badge/HTTP_Client-EA580C?style=for-the-badge" alt="HTTP Client" /></a>
-  <a href="./oop/"><img src="https://img.shields.io/badge/OOP-DB2777?style=for-the-badge" alt="Object-Oriented Programming" /></a>
-  <a href="./collections/"><img src="https://img.shields.io/badge/Collections-CA8A04?style=for-the-badge" alt="Collections" /></a>
-  <a href="./concurrency/"><img src="https://img.shields.io/badge/Concurrency-475569?style=for-the-badge" alt="Concurrency" /></a>
+  <a href="./Networking/"><img src="https://img.shields.io/badge/Networking-0A66C2?style=for-the-badge&logo=java&logoColor=white" alt="Networking" /></a>
+  <a href="./Networking/inet-address/"><img src="https://img.shields.io/badge/InetAddress-2563EB?style=for-the-badge" alt="InetAddress" /></a>
+  <a href="./Networking/tcp-sockets/"><img src="https://img.shields.io/badge/TCP_Sockets-0D9488?style=for-the-badge" alt="TCP Sockets" /></a>
+  <a href="./Networking/udp-datagrams/"><img src="https://img.shields.io/badge/UDP_Datagrams-7C3AED?style=for-the-badge" alt="UDP Datagrams" /></a>
+  <a href="./Networking/http-client/"><img src="https://img.shields.io/badge/HTTP_Client-EA580C?style=for-the-badge" alt="HTTP Client" /></a>
+  <a href="./Oop/"><img src="https://img.shields.io/badge/OOP-DB2777?style=for-the-badge" alt="Object-Oriented Programming" /></a>
+  <a href="./Collections/"><img src="https://img.shields.io/badge/Collections-CA8A04?style=for-the-badge" alt="Collections" /></a>
+  <a href="./Concurrency/"><img src="https://img.shields.io/badge/Concurrency-475569?style=for-the-badge" alt="Concurrency" /></a>
 </p>
 
 ---
