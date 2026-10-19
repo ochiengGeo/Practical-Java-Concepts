@@ -57,15 +57,15 @@ Explore Java's native networking APIs through practical examples.
 - **UDP Datagrams:** Connectionless communication using datagram packets.
 - **HTTP Client:** Synchronous and asynchronous HTTP requests.
 
-[Explore Networking →](./networking/)
+[Explore Networking →](./Networking/)
 
-[Explore InetAddress →](./networking/inet-address/)
+[Explore InetAddress →](./Networking/inet-address/)
 
-[Explore TCP Sockets →](./networking/tcp-sockets/)
+[Explore TCP Sockets →](./Networking/tcp-sockets/)
 
-[Explore UDP Datagrams →](./networking/udp-datagrams/)
+[Explore UDP Datagrams →](./Networking/udp-datagrams/)
 
-[Explore HTTP Client →](./networking/http-client/)
+[Explore HTTP Client →](./Networking/http-client/)
 
 ### Object-Oriented Programming (OOP)
 
