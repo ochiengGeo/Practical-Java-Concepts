@@ -28,7 +28,7 @@ Practical-Java-Concepts/
 ├── networking/
 │   ├── inet-address/
 │   │   ├── HostnameResolver.java
-│   │   ├── NetworkInterfaceDemo.java
+│   │   ├── NicScanner.java
 │   │   └── ReachabilityCheck.java
 │   ├── tcp-sockets/
 │   │   ├── SimpleClient.java
